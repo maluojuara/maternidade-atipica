@@ -2,7 +2,7 @@ let textos = {};
 const fecharHistoria = document.querySelector('.fechar');
 const modal = document.querySelector('.modal');
 
-fetch('../assets/textos.json')
+fetch('/assets/textos.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
