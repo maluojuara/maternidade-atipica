@@ -1,0 +1,176 @@
+:root {
+    --lilas-suave: #C7B6D8;
+    --verde-menta: #A7D7C5;
+    --cinza-claro: #F2F2F2;
+    --verde-escuro: #4A766E;
+    --fonte-principal: 'Inter';
+}
+
+@font-face {
+    font-family: 'Tan Nimbus'; 
+    src: url('/fonts/TAN-NIMBUS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--cinza-claro);
+}
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4.5rem;
+}
+
+h1, h2 {
+    font-family: 'Tan Nimbus'; 
+    color: var(--lilas-suave);
+    text-shadow: 2.2px 1px 0 var(--verde-escuro);
+}
+
+h1{
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+
+h2{
+    font-size: 1.6rem;
+}
+
+/* Histórias */
+
+.historias{
+    margin: 5rem 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+.historias-linha1, .historias-linha2{
+    display: flex;
+    justify-content: center;
+    gap: 3.3rem;
+    flex-wrap: wrap;
+}
+
+.hover-container{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(199, 182, 216, 0.8);
+    color: var(--verde-escuro); 
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+}
+
+.hover-container:hover .hover-text {
+    opacity: 1; 
+}
+
+/* História aberta */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(199, 182, 216, 0.7);
+}
+
+.modal-whitecontainer {
+    background-color: var(--cinza-claro);
+    border-radius: 50px;
+    margin: 11rem 8rem;
+    padding: 5rem;
+    padding-left: 7rem;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.modal-whitecontainer::-webkit-scrollbar {
+    width: 0; }
+
+.modal-content{
+    max-height: 30rem;
+    margin-bottom: 4rem;
+}
+
+.modal-titulo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-titulo h3 {
+    font-family: var(--fonte-principal);
+    color: var(--verde-escuro);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.modal-texto{
+    color: var(--verde-escuro);
+    font-family: var(--fonte-principal);
+    white-space: pre-wrap;
+    margin-right: 4.5rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.modal-descricao{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6rem;
+    margin-left: 30rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.modal-descricao-texto{
+    font-family: var(--fonte-principal);
+    color: var(--verde-escuro);
+    font-size: 1.2rem;
+    text-align: end;
+    font-weight: 600;
+
+}
+.modal-descricao-img{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.fechar {
+    color: var(--verde-escuro);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+/* Sobre a autora */
+
+.sobre-container{
+    background-color: rgba(199, 182, 216, 0.8);
+    border-radius: 70px;
+    margin: 4.4rem 6.25rem;
+    padding: 6.25rem;
+    display: flex;
+}
