@@ -27,17 +27,18 @@ header {
 
 h1, h2 {
     font-family: 'Tan Nimbus'; 
-    color: var(--lilas-suave);
-    text-shadow: 2.2px 1px 0 var(--verde-escuro);
 }
 
 h1{
     font-size: 2.4rem;
     margin-bottom: 1.5rem;
+    color: var(--lilas-suave);
+    text-shadow: 2.2px 1px 0 var(--verde-escuro);
 }
 
 h2{
     font-size: 1rem;
+    color: var(--verde-escuro);
 }
 
 /* Histórias */
