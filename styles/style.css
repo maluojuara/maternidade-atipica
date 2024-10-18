@@ -16,6 +16,7 @@
 body {
     background-color: var(--cinza-claro);
 }
+
 header {
     display: flex;
     justify-content: center;
@@ -108,10 +109,10 @@ h2{
 .modal-whitecontainer {
     background-color: var(--cinza-claro);
     border-radius: 50px;
-    margin: 11rem 8rem;
-    padding: 5rem;
-    padding-left: 7rem;
-    max-height: 80%;
+    margin: 8rem 5rem;
+    padding: 4.5rem;
+    padding-left: 5rem;
+    max-height: 50%;
     overflow-y: auto;
 }
 
@@ -131,7 +132,7 @@ h2{
 .modal-titulo h3 {
     font-family: var(--fonte-principal);
     color: var(--verde-escuro);
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
 
@@ -141,14 +142,14 @@ h2{
     white-space: pre-wrap;
     margin-right: 4.5rem;
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .modal-descricao{
     display: flex;
     justify-content: flex-end;
     margin-right: 6rem;
-    margin-left: 30rem;
+    margin-left: 20rem;
     align-items: center;
     gap: 2rem;
 }
@@ -156,7 +157,7 @@ h2{
 .modal-descricao-texto{
     font-family: var(--fonte-principal);
     color: var(--verde-escuro);
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: end;
     font-weight: 600;
 
